@@ -4,5 +4,3 @@
 	+ chọn framework: Angular hoặc React
 	+ chọn mẫu ban đầu
 	+ xem thông tin phiên bản ionic hiện tại: ionic info
-
-	test
