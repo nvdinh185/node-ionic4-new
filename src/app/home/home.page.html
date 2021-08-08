@@ -8,4 +8,6 @@
 
 <ion-content>
   <ion-button color="primary" (click)="getItems()">Get Items</ion-button>
+  <input type="file" multiple (change)="fileChange($event)">
+  <ion-button color="secondary" (click)="onSubmit()">Submit</ion-button>
 </ion-content>

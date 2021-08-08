@@ -4,6 +4,6 @@ const handlers = require('../handlers/handler');
 
 router.get('/get-items', handlers.getItems);
 
-router.post('/post-item', handlers.postItem);
+router.post('/upload-file', handlers.postUpload);
 
 module.exports = router;
