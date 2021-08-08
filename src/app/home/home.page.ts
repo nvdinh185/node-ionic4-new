@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private httpClient: HttpClient) { }
+
+  getItems() {
+    this.httpClient.get('http://localhost:8080/db/get-items')
+      .toPromise()
+      .then(DataJSON => console.log(DataJSON))
+      .catch(err => {
+        console.log('err: ' + err);
+      });
+  }
 
 }
